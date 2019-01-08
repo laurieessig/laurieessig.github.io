@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Laurie Essig </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.title{
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* navigation menu */
+.navbar {
+  font-family: monospace;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+/* news */
+.column {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding:25px;
+
+}
+
+.column .news:hover {
+  /*transform: scale(1.2);
+  transition: transform 0.5s;*/
+
+}
+
+
+
+.overlay {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  background-color: white;
+}
+
+.column .news:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: monospace;
+}
+
+/* unvisited link */
+.news a:link {
+    color: black;
+}
+
+/* visited link */
+.news a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="title">In the News</div>
+    <a href="./../index.html">Home</a>
+    <a href="news/index.html">In The News</a>
+    <a href="mailto:lessig@middlebury.edu">Contact</a>
+    <a href="./../about/index.html">About</a>
+    <a href="./../lecv.pdf">CV</a>
+  </div>
+
+<div class="row" >
+  <div class="column">
+    <div class="news">
+      <img src="court.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            <br><a href="http://msmagazine.com/blog/2018/09/24/brett-kavanaugh-creation-rapist/?utm_source=facebook&utm_medium=Social&utm_campaign=SocialWarfare" style="font-weight:bold">Read Article</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="news">
+      <img src="NBC.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            <br><a href="https://www.nbcnews.com/think/video/fewer-people-are-getting-married-here-s-why-1236231747777" style="font-weight:bold">Watch Video</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="news">
+      <img src="hate.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            <br><a href="https://www.chronicle.com/article/Hate-Crimes-Won-t-End-Until/243046" style="font-weight:bold">Read Article</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="news">
+      <img src="nose.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            <br><a href="https://theconversation.com/why-are-fewer-and-fewer-americans-fixing-their-noses-94010" style="font-weight:bold">Read Article</a>
+          </div>
+        </div>
+    </div>
+  </div>
+ </div>
+<div class="row">
+  <div class="column">
+    <div class="news">
+      <img src="royal.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            <br><a href="https://theconversation.com/in-the-us-fairy-tale-royal-weddings-clash-with-reality-94719" style="font-weight:bold">Read Article</a>
+          </div>
+        </div>
+    </div>
+  </div>  
+</div>
+</div>
+
+</body>
+</html>

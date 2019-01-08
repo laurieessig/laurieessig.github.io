@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Laurie Essig </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.title{
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* navigation menu */
+.navbar {
+  font-family: monospace;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+
+/* pic and info */
+.column {
+    position: relative;
+    float: left;
+    width: 50%;
+
+}
+.left {
+  width: 70%;
+  text-align: left;
+  font-size: 18px;
+  font-family: monospace;
+  padding: 20px;
+  color: black;
+}
+
+.left .box{
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.right {
+  width: 30%;
+  padding: 20px;
+
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="navbar">
+  <div class="title">About Me</div>
+  <a href="./../index.html">Home</a>
+  <a href="./../news/index.html">In The News</a>
+  <a href="mailto:lessig@middlebury.edu">Contact</a>
+  <a href="about/index.html">About</a>
+  <a href="./../lecv.pdf">CV</a>
+</div>
+
+<div class="row" >
+  <div class="column left">
+    <div class ="box">
+    Laurie Essig is Professor of Gender, Sexuality & Feminist Studies at Middlebury College. She is a sociologist who teaches courses on how power shapes our bodies and our desires Her courses include Sociology of Heterosexuality, White People, Men & Masculinities and Feminist Blogging. Her first book, Queer in Russia: A Story of Sex, Self and the Other (Duke, 1999) considered how sexual others are imagined and thus imagine themselves in Russia. Her second book, American Plastic: Credit Cards, Boob Jobs and Our Quest for Perfection (Beacon, 2010) argued that cosmetic surgery in the US is the subprime mortgage crisis of the body, with corporations squeezing profit from working class Americans who hope a more perfect body will lead to a better future.. Her most recent book, Love, Inc.: Dating Apps, the Big White Wedding, and Chasing the Happily Neverafter argues that romance as an ideology became even more powerful in the last few decades even as actual marriage rates declined. Romance promises us a safe and secure future as a private love affair even as our future is more and more precarious. Rather than demanding the necessary political and structural changes today for a secure tomorrow, we are too busy reading romance novels, obsessing over royal weddings, or swiping through our dating apps to pay much attention to the world around us. Essig has written for a variety of publications including the Washington Post, the New York Times, the Conversation and the Chronicle of Higher Education.
+   </div>
+  </div>
+
+
+  <div class="column right">
+    <img src="./../Essig.jpg" style="width:100%" border="5">
+  </div>
+</div>
+
+</body>
+</html>

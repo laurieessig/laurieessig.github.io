@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Laurie Essig </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.title{
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* navigation menu */
+.navbar {
+  font-family: monospace;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+/* books */
+.column {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding: 25px;
+
+}
+
+.column .books:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+}
+.right .love{
+  color: red;
+
+}
+.right .sub{
+  font-size: 20px;
+  font-family: monospace;
+
+}
+
+
+
+.overlay {
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  background-color: white;
+}
+
+.column .books:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: monospace;
+}
+
+/* unvisited link */
+.books a:link {
+    color: black;
+}
+
+/* visited link */
+.books a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="navbar">
+  <div class="title">Laurie Essig</div>
+  <a href="laurieessig.html">Home</a>
+  <a href="news/index.html">In The News</a>
+  <a href="mailto:lessig@middlebury.edu">Contact</a>
+  <a href="about/index.html">About</a>
+  <a href="lecv.pdf">CV</a>
+</div>
+<div class="row">
+
+  <div class="column left">
+    <iframe width="683.2" height="384" src="https://www.youtube.com/embed/2l0sZrrWlrU"
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="column right"> COMING FEBRUARY 2019: <div class="love">Love Inc.</div>
+      <div class="sub">Dating Apps, the Big White Wedding, and Chasing the Happily Neverafter</div>
+  </div>
+
+
+</div>
+<div class="row" >
+  <div class="column">
+    <div class="books">
+        <img src="queer.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            In Queer in Russia Laurie Essig examines the formation of gay identity and community in the former Soviet Union.
+            <br><a href="https://www.dukeupress.edu/queer-in-russia/?viewby=title" style="font-weight:bold">Click to Purchase</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="books">
+      <img src="plastic.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            Plastic surgery has become "the answer" for many Americans, and in American Plastic sociologist Laurie Essig explores how we arrived at this particular solution.
+            <br><a href="http://www.beacon.org/American-Plastic-P767.aspx" style="font-weight:bold">Click to Purchase</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="books">
+      <img src="love.jpg" style="width:100%">
+        <div class="overlay">
+          <div class="text">
+            The notion of "happily ever after" has been ingrained in many of us since childhood-meet someone, date, have the big white wedding, and enjoy your well-deserved future. But why do we buy into this idea? Is love really all we need in life?
+            <br><a href="https://www.ucpress.edu/book/9780520300491/love-inc" style="font-weight:bold">Click to Purchase</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
